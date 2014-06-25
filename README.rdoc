@@ -1,9 +1,25 @@
-= force-leads
+= Force Leads
 
-Description goes here.
+A Salesforce integration's example gem to upload leads.
+
+{<img src="https://travis-ci.org/brodock/force-leads.svg" alt="Build Status" />}[https://travis-ci.org/brodock/force-leads]
+
+== Requirements
+
+This example gem will be used to upload leads to a company's account.
+It should be easy to select which company to upload for.
+The fields that should be uploaded to Salesforce's Lead object are:
+
+* "First Name" (FirstName)
+* "Last Name" (LastName)
+* "E-mail" (Email)
+* "Company Name" (Company)
+* "Job Title" (Title)
+* "Phone Number" (Phone)
+* "Website URL" (Website)
 
 == Contributing to force-leads
- 
+
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet.
 * Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it.
 * Fork the project.
@@ -14,6 +30,5 @@ Description goes here.
 
 == Copyright
 
-Copyright (c) 2014 Gabriel. See LICENSE.txt for
+Copyright (c) 2014 Gabriel Mazetto. See LICENSE.txt for
 further details.
-

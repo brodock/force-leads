@@ -1,0 +1,15 @@
+language: ruby
+rvm:
+  - 2.0
+  - 2.1
+  - jruby
+  - rbx
+before_install:
+  - export DISPLAY=:99.0
+  - sh -e /etc/init.d/xvfb start
+script:
+  - bundle exec rake spec
+matrix:
+  allow_failures:
+  - rvm: jruby
+  - rvm: rbx

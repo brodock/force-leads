@@ -7,7 +7,7 @@ class ForceLeads::Lead
   end
 
   def create(attributes = {})
-    # TODO: use the client to create the remote data
+    @client.create('Lead', attributes)
   end
 
 end

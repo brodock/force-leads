@@ -14,13 +14,13 @@ require 'rake'
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://guides.rubygems.org/specification-reference/ for more options
-  gem.name = "force-leads"
+  gem.name = "force_leads"
   gem.homepage = "http://github.com/brodock/force-leads"
   gem.license = "MIT"
-  gem.summary = %Q{A}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Salesforce REST integration demo gem}
+  gem.description = %Q{This is a Salesforce REST integration demo gem that was create as a proof of concept and can be used to create a new Lead on a OAuth2 authenticated organization}
   gem.email = "brodock@gmail.com"
-  gem.authors = ["Gabriel"]
+  gem.authors = ["Gabriel Mazetto"]
   # dependencies defined in Gemfile
 end
 Jeweler::RubygemsDotOrgTasks.new

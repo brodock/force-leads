@@ -2,9 +2,9 @@ require File.expand_path(File.dirname(__FILE__) + '/spec_helper')
 
 describe ForceLeads::Lead do
 
-  let(:credential) { ForceLeads::OauthCredential.new }
-  subject { ForceLeads::Lead.new(credential) }
+  let(:credential) { ForceLeads::OauthCredential.new({instance_url: 'https://nax.salesforce.com'}) }
 
+  subject { ForceLeads::Lead.new(credential) }
   it { should respond_to :create }
 
   describe '#initialize' do

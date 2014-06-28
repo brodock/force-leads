@@ -9,11 +9,11 @@ source "http://rubygems.org"
 gem 'restforce', github: 'pachirel/restforce', branch: 'update_dependency'
 
 group :development do
-  gem "rspec", "~> 2.8.0"
-  gem "shoulda"
-  gem "yard", "~> 0.7"
-  gem "rdoc", "~> 3.12"
-  gem "bundler", "~> 1.0"
-  gem "jeweler", "~> 2.0.1"
-  gem "simplecov", ">= 0"
+  gem 'rspec', '~> 2.8'
+  gem 'shoulda', '~> 3.5'
+  gem 'yard', '~> 0.7'
+  gem 'rdoc', '~> 3.12'
+  gem 'bundler', '~> 1.0'
+  gem 'jeweler', '~> 2.0'
+  gem 'simplecov', '~> 0.8'
 end

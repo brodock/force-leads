@@ -1,7 +1,12 @@
 class ForceLeads::OauthCredential
 
+
+  def initialize(credentials = {})
+    raise ArgumentError.new 'Please specify a hash of attributes' if credentials.nil? || credentials.empty? || !credentials.has_key?(:instance_url)
+    @credentials = credentials
+  end
+
   def build_client
-    # TODO: generate a valid Restforce client with OauthCredentials
-    return true
+    Restforce.new(@credentials)
   end
 end

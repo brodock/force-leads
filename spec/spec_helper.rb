@@ -1,4 +1,8 @@
 require 'simplecov'
+require 'faker'
+require 'webmock/rspec'
+
+WebMock.disable_net_connect!
 
 module SimpleCov::Configuration
   def clean_filters

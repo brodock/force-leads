@@ -1,4 +1,4 @@
-require File.expand_path(File.dirname(__FILE__) + '/spec_helper')
+require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
 
 describe ForceLeads::OauthCredential do
 
@@ -10,7 +10,7 @@ describe ForceLeads::OauthCredential do
   describe '#build_client' do
 
     it 'generates a valid client' do
-      subject.build_client.should be_a(Restforce::Data::Client)
+      subject.build_client.should be_a(Restforce::AbstractClient)
     end
 
   end

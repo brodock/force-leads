@@ -9,7 +9,7 @@ module ForceLeads
 
     def create(attributes = {})
       raise ArgumentError.new 'Please specify a hash of attributes' if attributes.nil? || attributes.empty?
-      @client.create('Lead', attributes)
+      @client.create!('Lead', attributes)
     end
 
   end
